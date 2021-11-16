@@ -1,0 +1,11 @@
+.hero {
+    padding: 0 2rem;
+
+    &__title {
+        font-family: 'Roboto';
+        font-size: $font-size-lg;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    
+}

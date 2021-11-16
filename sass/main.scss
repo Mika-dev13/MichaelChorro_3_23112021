@@ -1,12 +1,17 @@
 // variables & fonctions
 @import './utils/variables';
+@import './utils/mixins';
 
 
 // Base & layout
+@import './base/base';
 @import './base/typography';
+@import './layout/header';
+@import './components/form';
 
 
-// colors
+// pages
+@import './pages/acceuil';
 
 
 
