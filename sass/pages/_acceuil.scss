@@ -1,11 +1,28 @@
 .hero {
-    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 1.5rem;
+    text-align: center;
+    background-color: $bg-light;
+    @include tablet {
+        padding: 5rem 1.5rem;
+    }
 
     &__title {
         font-family: 'Roboto';
         font-size: $font-size-lg;
-        text-align: center;
         padding-bottom: 1rem;
+        @include tablet {
+            font-size: $font-size-xl;
+        }
     }
-    
+
+    &__text {
+        padding-bottom: 2rem;
+        @include tablet {
+            font-size: $font-size-lg;
+            width: 500px;
+        }
+    }
 }

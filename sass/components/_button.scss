@@ -1,0 +1,11 @@
+.btn {
+    display: inline-block;
+        padding: .75rem 1rem;
+        background: $bg-button;
+        border-radius: 999px;
+        color: #fff;
+        
+        &:hover {
+            background: linear-gradient(350deg, #480699 0%, #fc3fc6 100%);
+        }
+}

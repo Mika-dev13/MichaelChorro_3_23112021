@@ -6,7 +6,6 @@
 
 .container {
   margin: 0 auto;
-  padding: 2rem 1.5rem;
 }
 
 a {
@@ -48,7 +47,7 @@ h1 {
   .header {
     flex-direction: row;
     box-shadow: 0px 5px 10px rgba(58, 58, 58, 0.4);
-    padding: 0 10rem;
+    padding: 0 10%;
   }
 }
 
@@ -64,8 +63,9 @@ h1 {
   width: 100%;
   font-family: "Font Awesome 5 free";
   font-weight: 900;
+  font-size: 1rem;
   text-align: center;
-  padding: 0.75rem 0;
+  padding: 1rem 0;
   border: none;
   outline: none;
   background-color: #dfdfdf;
@@ -74,6 +74,7 @@ h1 {
   .search__form-input {
     width: 200px;
     border-radius: 5px;
+    padding: 0.75rem 0;
   }
 }
 
@@ -82,13 +83,47 @@ h1 {
 }
 
 .hero {
-  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 5rem 1.5rem;
+  }
 }
 .hero__title {
   font-family: "Roboto";
   font-size: 1.5rem;
-  text-align: center;
   padding-bottom: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 2rem;
+  }
+}
+.hero__text {
+  padding-bottom: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .hero__text {
+    font-size: 1.5rem;
+    width: 500px;
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1rem;
+  background: linear-gradient(350deg, #9356dc 0%, #ff79da 100%);
+  border-radius: 999px;
+  color: #fff;
+}
+.btn:hover {
+  background: linear-gradient(350deg, #480699 0%, #fc3fc6 100%);
 }
 
 /*# sourceMappingURL=style.css.map */
