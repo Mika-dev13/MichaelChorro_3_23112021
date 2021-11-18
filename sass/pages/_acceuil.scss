@@ -2,11 +2,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3rem 1.5rem;
+    padding: $padding-sm;
     text-align: center;
     background-color: $bg-light;
     @include tablet {
-        padding: 5rem 1.5rem;
+        padding: $padding-lg;
     }
 
     &__title {
@@ -25,4 +25,29 @@
             width: 500px;
         }
     }
+}
+
+.functioning {
+    padding: $padding-sm;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    &__title {
+        @include tablet {
+            padding-bottom: 2rem;
+        }
+    }
+
+    &__content {
+        counter-reset: listCounter;
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+.grid {
+    padding: $padding-sm;
+    background-color: $bg-light;
 }

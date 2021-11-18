@@ -3,13 +3,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
     
     &__logo {
         box-shadow: $b-shadow;
         width: 100%;
         text-align: center;
         padding: 1rem 0 0.5rem 0;
-        z-index: 10;
+        z-index: 2;
         @include tablet {
             box-shadow: none;
             text-align: left;
@@ -17,8 +18,8 @@
     }
     @include tablet {
         flex-direction: row;
-        box-shadow: $b-shadow;
         padding: 0 10%;
+        box-shadow: $b-shadow;
     }
 }
 .search {

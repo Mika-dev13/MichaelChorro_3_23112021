@@ -18,14 +18,15 @@ $font-size-xl: $base-font-size * 2;
 $font-size-xxl: $base-font-size * 3;
 
 // box shadow
-$b-shadow: 0px 5px 10px rgba(58, 58, 58, .4);
+$b-shadow: 0px 5px 5px rgba(58, 58, 58, .3);
 
 // border raduis
 $brad-sm: 10px;
 $brad-lg: 20px;
 
 // spacing
-
+$padding-sm: 3rem 1.5rem;
+$padding-lg: 5rem 1.5rem;
 //responsive
 
 $breakpoints: (
