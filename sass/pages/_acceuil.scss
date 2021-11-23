@@ -35,6 +35,7 @@
     &__title {
         @include tablet {
             padding-bottom: 2rem;
+            text-align: center;
         }
     }
 
@@ -50,4 +51,19 @@
 .grid {
     padding: $padding-sm;
     background-color: $bg-light;
+
+    &__title {
+        text-align: center;
+    }
+
+    &__items {
+        @include tablet {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            min-width: 700px;
+            width: 75%;
+            margin: 2rem auto;
+        }
+    }
 }

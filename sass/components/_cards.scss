@@ -52,16 +52,44 @@
     }
 }
 
+/* ----------- cartes restaurants ------------ */
+
 .grid-item {
     border-radius: $brad-lg;
     box-shadow: $b-shadow;
     margin: 2rem 0;
+    position: relative;
+    @include tablet {
+        min-width: 332px;
+        min-height: 332px;
+        margin: 0;
+    }
+    &--new {
+        &::before {
+            position: absolute;
+            content: 'Nouveau';
+            width: 5rem;
+            height: 1.75rem;
+            color: rgb(19, 112, 89);
+            font-weight: 600;
+            border-radius: 4px;
+            background: $tertiary;
+            display: flex;  
+            justify-content: center;
+            align-items: center;
+            top: .75rem;
+            right: 1rem;
+        }
+    }
 
     &__img {
         width: 100%;
         object-fit: cover;
         height: 150px;
         border-radius: 20px 20px 0 0;
+        @include tablet {
+            min-height: 250px;
+        }
     }
     
     &__caption {
@@ -70,6 +98,13 @@
         align-items: center;
         padding:  .75rem 1rem;
     }
+    .caption-content {
+        
+        &__address {
+            font-style: normal;
+        }
+    }
+
     .caption-icon {
         font-size: 1.5rem;
         &:hover {

@@ -83,6 +83,40 @@ h1 {
   color: #202020;
 }
 
+.footer {
+  background-color: #3a3a3a;
+  padding: 3rem 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
+}
+.footer__title {
+  font-family: "shrikhand";
+  letter-spacing: 1.25px;
+  padding-bottom: 1rem;
+  color: white;
+  font-size: 1.5rem;
+}
+.footer__text {
+  font-size: 1rem;
+}
+.footer__text--link {
+  padding-left: 0.5rem;
+  color: white;
+}
+.footer__link {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.footer__link--block {
+  display: block;
+  color: white;
+}
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -124,6 +158,7 @@ h1 {
 @media screen and (min-width: 768px) {
   .functioning__title {
     padding-bottom: 2rem;
+    text-align: center;
   }
 }
 .functioning__content {
@@ -139,6 +174,19 @@ h1 {
 .grid {
   padding: 3rem 1.5rem;
   background-color: #f1f1f1;
+}
+.grid__title {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .grid__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    min-width: 700px;
+    width: 75%;
+    margin: 2rem auto;
+  }
 }
 
 .btn {
@@ -211,10 +259,34 @@ h1 {
   }
 }
 
+/* ----------- cartes restaurants ------------ */
 .grid-item {
   border-radius: 20px;
   box-shadow: 0px 5px 5px rgba(58, 58, 58, 0.3);
   margin: 2rem 0;
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .grid-item {
+    min-width: 332px;
+    min-height: 332px;
+    margin: 0;
+  }
+}
+.grid-item--new::before {
+  position: absolute;
+  content: "Nouveau";
+  width: 5rem;
+  height: 1.75rem;
+  color: #137059;
+  font-weight: 600;
+  border-radius: 4px;
+  background: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0.75rem;
+  right: 1rem;
 }
 .grid-item__img {
   width: 100%;
@@ -222,11 +294,19 @@ h1 {
   height: 150px;
   border-radius: 20px 20px 0 0;
 }
+@media screen and (min-width: 768px) {
+  .grid-item__img {
+    min-height: 250px;
+  }
+}
 .grid-item__caption {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.75rem 1rem;
+}
+.grid-item .caption-content__address {
+  font-style: normal;
 }
 .grid-item .caption-icon {
   font-size: 1.5rem;
