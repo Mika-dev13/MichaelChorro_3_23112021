@@ -7,6 +7,13 @@
         color: #fff;
         
         &:hover {
-            background: linear-gradient(350deg, #480699 0%, #fc3fc6 100%);
+            background: linear-gradient(350deg, #aa82db 0%, #fc9ee1 100%);
+            box-shadow: 0px 5px 7px rgba(31, 31, 31, 0.3);
         }
+}
+
+.btn-command {
+    font-size: 1.25rem;
+    border: none;
+    padding: 1rem 2.5em;
 }

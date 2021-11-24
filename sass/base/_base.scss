@@ -8,8 +8,21 @@
     margin: 0 auto;   
 }
 
+.container-menu {
+    position: relative;
+    z-index: 5;
+    margin-top: -3rem;
+    padding: 2rem 1rem;
+    background: $bg-light;
+    border-radius: 2rem 2rem 0 0;
+    color: $text-color;
+}
 a {
     text-decoration: none;
     color: $text-color;
     cursor: pointer;
+}
+
+ul {
+    list-style: none;
 }

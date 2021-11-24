@@ -5,3 +5,74 @@
         height: auto;
     }
 }
+
+.restaurant-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2.5rem;
+    padding-right: 1.5rem;
+
+    &__title {
+        font-family: 'Shrikhand';
+    }
+
+    &__icon {
+        font-size: 1.25rem;
+    }
+}
+
+.content-menu {
+
+    &__title {
+        position: relative;
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: 400;
+        
+        &::after {
+            content: '';
+            position: absolute;
+            width: 2.5rem;
+            height: .15rem;
+            background-color: $tertiary;
+            bottom: -.25rem;
+            left: 0;
+        }
+    }
+}
+
+.list-menu {
+    padding-bottom: 2rem;
+}
+
+.list-menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+    padding: .75rem;
+    border-radius: $brad-sm;
+    background-color: white;
+    box-shadow: $b-shadow;
+
+    &__text--bold {
+        font-weight: 700;
+        padding-bottom: .25rem;
+    }
+
+    &__text--sm {
+        font-size: .75rem;
+    }
+
+    &__price {
+        align-self: flex-end;
+        font-weight: 700;
+        font-size: .75rem;
+    }
+}
+
+.cto {
+    text-align: center;
+    padding: 1rem 0 3rem 0;
+}
