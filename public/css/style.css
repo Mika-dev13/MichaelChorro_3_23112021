@@ -169,6 +169,57 @@ h1 {
   text-align: center;
 }
 
+.loader-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 50;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: loader 0.3s ease-in-out 3s forwards;
+}
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+  }
+}
+.loader-container__item {
+  width: 2rem;
+  height: 2rem;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 0 0.5rem;
+  animation: load 0.3s infinite alternate;
+}
+@keyframes load {
+  100% {
+    transform: translateY(-35%);
+  }
+}
+.loader-container__item--pink {
+  background-color: #FF79DA;
+}
+.loader-container__item--violet {
+  background-color: #9356DC;
+  animation-delay: 0.5s;
+}
+.loader-container__item--green {
+  background-color: #99E2D0;
+  animation-delay: 1s;
+}
+
 .hero {
   display: flex;
   flex-direction: column;
