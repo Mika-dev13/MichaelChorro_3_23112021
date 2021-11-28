@@ -59,6 +59,7 @@
     box-shadow: $b-shadow;
     margin: 2rem 0;
     position: relative;
+    transition: transform 250ms ease-in-out;
     @include tablet {
         min-width: 332px;
         min-height: 332px;
@@ -80,6 +81,11 @@
             top: .75rem;
             right: 1rem;
         }
+    }
+
+    &:hover {
+        transform: scale(1.02);
+        transition: transform 250ms ease-in-out;
     }
 
     &__img {

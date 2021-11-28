@@ -1,6 +1,11 @@
 .header-menu {
     padding: .75rem 2rem;
     position: relative;
+    background-color: white;
+    @include tablet {
+        background-color: rgba(255, 255, 255, 0.7);
+        margin-bottom: 7rem;
+    }
 
     &__arrow {
         position: absolute;

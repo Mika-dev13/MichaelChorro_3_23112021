@@ -16,6 +16,17 @@
     background: $bg-light;
     border-radius: 2rem 2rem 0 0;
     color: $text-color;
+    max-width: 800px;
+    @include tablet {
+        width: 75%;
+        border-radius: 2rem;
+        margin: 0 auto;
+        padding: 2rem 3rem;
+        background: rgba( 255, 255, 255, 0.30 );
+        backdrop-filter: blur( 6px );
+        -webkit-backdrop-filter: blur( 6px );
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
 }
 a {
     text-decoration: none;
@@ -25,4 +36,8 @@ a {
 
 ul {
     list-style: none;
+}
+
+span {
+    display: block;
 }
