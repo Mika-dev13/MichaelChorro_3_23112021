@@ -1,9 +1,9 @@
 .main-background {
     @include tablet {
         background-image: url(/img/resto3.jpg);
-    background-position: 40%;
-    background-size: cover;
-    padding-bottom: 7rem;
+        background-position: 40%;
+        background-size: cover;
+        padding-bottom: 7rem;
     }
 }
 
