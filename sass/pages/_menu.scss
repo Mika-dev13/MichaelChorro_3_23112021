@@ -1,7 +1,13 @@
 .main-background {
     @include tablet {
         background-image: url(/img/resto3.jpg);
-        background-position: 40%;
+        background-size: cover;
+        padding-bottom: 7rem;
+    }
+}
+.main-background2 {
+    @include tablet {
+        background-image: url(/img/resto1.jpg);
         background-size: cover;
         padding-bottom: 7rem;
     }

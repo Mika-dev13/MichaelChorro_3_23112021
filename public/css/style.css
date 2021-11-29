@@ -28,6 +28,15 @@
     backdrop-filter: blur(6px);
     -webkit-backdrop-filter: blur(6px);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    animation: appear 2s;
+  }
+  @keyframes appear {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }
 
@@ -192,29 +201,49 @@ h1 {
     opacity: 0;
   }
 }
-.loader-container__item {
-  width: 2rem;
-  height: 2rem;
-  background-color: #fff;
-  border-radius: 50%;
-  margin: 0 0.5rem;
-  animation: load 0.3s infinite alternate;
+.loader-container .loader-list {
+  display: flex;
 }
-@keyframes load {
+.loader-container .loader-list__item {
+  display: inline-block;
+  font-family: "shrikhand";
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+  color: #9356DC;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  animation: flash 0.5s linear infinite alternate;
+}
+.loader-container .loader-list__item:nth-child(odd) {
+  color: #FF79DA;
+}
+@keyframes flash {
   100% {
-    transform: translateY(-35%);
+    transform: translateY(-65%);
   }
 }
-.loader-container__item--pink {
-  background-color: #FF79DA;
+.loader-container .loader-list__item:nth-child(1) {
+  animation-delay: 0.1s;
 }
-.loader-container__item--violet {
-  background-color: #9356DC;
+.loader-container .loader-list__item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.loader-container .loader-list__item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.loader-container .loader-list__item:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.loader-container .loader-list__item:nth-child(5) {
   animation-delay: 0.5s;
 }
-.loader-container__item--green {
-  background-color: #99E2D0;
-  animation-delay: 1s;
+.loader-container .loader-list__item:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.loader-container .loader-list__item:nth-child(7) {
+  animation-delay: 0.7s;
+}
+.loader-container .loader-list__item:nth-child(8) {
+  animation-delay: 0.8s;
 }
 
 .hero {
@@ -292,7 +321,14 @@ h1 {
 @media screen and (min-width: 768px) {
   .main-background {
     background-image: url(/img/resto3.jpg);
-    background-position: 40%;
+    background-size: cover;
+    padding-bottom: 7rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-background2 {
+    background-image: url(/img/resto1.jpg);
     background-size: cover;
     padding-bottom: 7rem;
   }
