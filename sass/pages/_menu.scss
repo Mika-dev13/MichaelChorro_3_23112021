@@ -1,22 +1,7 @@
-// .main-background {
-//     @include tablet {
-//         background-image: url(/img/resto3.jpg);
-//         background-size: cover;
-//         padding-bottom: 7rem;
-//     }
-// }
-// .main-background2 {
-//     @include tablet {
-//         background-image: url(/img/resto1.jpg);
-//         background-size: cover;
-//         padding-bottom: 7rem;
-//     }
-// }
-
 .hero-menu {
     &__img {
         width: 100%;
-        height: 50vh;
+        height: 40vh;
         object-fit: cover;
         background-position: center center;
     }
