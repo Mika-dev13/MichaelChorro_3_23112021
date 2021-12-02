@@ -16,17 +16,16 @@
     background: $bg-light;
     border-radius: 2rem 2rem 0 0;
     color: $text-color;
-    max-width: 800px;
     @include tablet {
-        width: 75%;
+        width: 80%;
         border-radius: 2rem;
-        margin: 0 auto;
+        margin: -6rem auto 5rem auto;
         padding: 2rem 3rem;
-        background: rgba( 255, 255, 255, 0.30 );
-        backdrop-filter: blur( 6px );
-        -webkit-backdrop-filter: blur( 6px );
-        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-        animation: appear 2s;
+        background: rgba( 255, 255, 255, 0.3);
+        backdrop-filter: blur( 3px );
+        -webkit-backdrop-filter: blur( 3px );
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        animation: appear 1.5s;
         @keyframes appear {
             0% {
                 opacity: 0;
