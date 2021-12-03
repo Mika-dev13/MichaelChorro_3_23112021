@@ -13,6 +13,7 @@
     align-items: center;
     padding-bottom: 1rem;
     padding-right: 1.5rem;
+    position: relative;
 
     &__title {
         font-family: 'Shrikhand';
@@ -20,7 +21,21 @@
     }
 
     &__icon {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+        
+        &--bold {
+            position: absolute;
+            right: 1.5rem;
+            color: $secondary;
+            opacity: 0;
+            transition: opacity .3s ease-in-out;
+            &:hover {
+                opacity: 1;
+                transform: scale(1.2);
+                transition: opacity .3s ease-in-out;
+            }
+        }
     }
 }
 

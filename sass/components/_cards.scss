@@ -108,23 +108,52 @@
 
     .caption-icon {
         font-size: 1.5rem;
+        position: relative;
         
-        &:hover {
-            background-image: $bg-button;
-            background-size: cover;
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-            font-weight: bold;
-            //color: $secondary;
-            animation: grow .5s both running;
+        // &:hover {
+        //     background-image: $bg-button;
+        //     background-size: cover;
+        //     background-clip: text;
+        //     -webkit-background-clip: text;
+        //     color: transparent;
+        //     font-weight: bold;
+        //     //color: $secondary;
+        //     transition: .6s ease;
+        // }
 
-            @keyframes grow {
-                0%{
-                    transform: scale(0);
-                }
-                100%{
-                    transform: scale(1.5);
+        &--bold {
+            position: absolute;
+            right: 1rem;
+            color: $secondary;
+            opacity: 0;
+            transition: opacity .3s ease-in-out;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -5px;
+                width: 2rem;
+                height: 2rem;
+                background-color: $bg-light;
+            }
+            
+            &:hover {
+                opacity: 1;
+                transition: opacity .3s ease-in-out .2s;
+                
+                &::after {
+                    animation: sca 1s ease-in-out;
+                    transform: scaleY(0);
+                    transform-origin: top;
+                    
+                    @keyframes sca {
+                        0% {
+                            transform: scaley(1);
+                        }
+                        100% {
+                            transform: scaley(0);
+                        }
+                    }
                 }
             }
         }

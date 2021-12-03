@@ -328,13 +328,27 @@ h1 {
   align-items: center;
   padding-bottom: 1rem;
   padding-right: 1.5rem;
+  position: relative;
 }
 .restaurant-name__title {
   font-family: "Shrikhand";
   letter-spacing: 1.5px;
 }
 .restaurant-name__icon {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.restaurant-name__icon--bold {
+  position: absolute;
+  right: 1.5rem;
+  color: #FF79DA;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.restaurant-name__icon--bold:hover {
+  opacity: 1;
+  transform: scale(1.2);
+  transition: opacity 0.3s ease-in-out;
 }
 
 .content-menu__title {
@@ -612,22 +626,39 @@ h1 {
 }
 .grid-item .caption-icon {
   font-size: 1.5rem;
+  position: relative;
 }
-.grid-item .caption-icon:hover {
-  background-image: linear-gradient(350deg, #9356dc 0%, #ff79da 100%);
-  background-size: cover;
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  font-weight: bold;
-  animation: grow 0.5s both running;
+.grid-item .caption-icon--bold {
+  position: absolute;
+  right: 1rem;
+  color: #FF79DA;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
-@keyframes grow {
+.grid-item .caption-icon--bold::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -5px;
+  width: 2rem;
+  height: 2rem;
+  background-color: #f1f1f1;
+}
+.grid-item .caption-icon--bold:hover {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out 0.2s;
+}
+.grid-item .caption-icon--bold:hover::after {
+  animation: sca 1s ease-in-out;
+  transform: scaleY(0);
+  transform-origin: top;
+}
+@keyframes sca {
   0% {
-    transform: scale(0);
+    transform: scaley(1);
   }
   100% {
-    transform: scale(1.5);
+    transform: scaley(0);
   }
 }
 
