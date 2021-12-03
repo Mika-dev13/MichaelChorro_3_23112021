@@ -3,7 +3,7 @@
     position: relative;
     z-index: 1;
     padding: .75rem 1rem;
-    background: linear-gradient(350deg, #9356dc 0%, #ff79da 100%);
+    background: $bg-button;
     border-radius: 999px;
     box-shadow: $b-shadow;
     color: #fff;

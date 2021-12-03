@@ -83,11 +83,6 @@
         }
     }
 
-    &:hover {
-        transform: scale(1.02);
-        transition: transform 250ms ease-in-out;
-    }
-
     &__img {
         width: 100%;
         object-fit: cover;
@@ -113,8 +108,25 @@
 
     .caption-icon {
         font-size: 1.5rem;
+        
         &:hover {
-            color: $primary;
+            background-image: $bg-button;
+            background-size: cover;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            font-weight: bold;
+            //color: $secondary;
+            animation: grow .5s both running;
+
+            @keyframes grow {
+                0%{
+                    transform: scale(0);
+                }
+                100%{
+                    transform: scale(1.5);
+                }
+            }
         }
     }
 }
