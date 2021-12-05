@@ -23,28 +23,44 @@
     }
 }
 .search {
+    display: flex;
+    justify-content: center;
     width: 100%;
     @include tablet {
         text-align: right;
+        width: 15rem;
+        padding: 1rem 0;
     }
-
-        &__form-input {
-            width: 100%;
-            font-family: "Font Awesome 5 free";
-            font-weight: 900;
+    
+    .search-form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        background-color: $bg-medium;
+        @include tablet {
+            border-radius: $brad-sm;
+        }
+        
+        &__input {
             font-size: 1rem;
-            text-align: center;
-            padding: 1rem 0;
+            padding: 1rem 0 1rem .5rem;
             border: none;
             outline: none;
-            background-color: $bg-medium;
+            background-color: transparent;
+        }
+
+        &__icon {
+            font-size: 1.25rem;
+            padding-left: 5rem;
             @include tablet {
-                width: 200px;
-                border-radius: 5px;
-                padding: .75rem 0;
+                padding-left: 5rem;
+                padding-right: 1rem;
+                
             }
         }
     }
+}
 #search::placeholder {
     color: $text-color;
 }

@@ -10,6 +10,7 @@
 
 .main-background {
   background-color: #f1f1f1;
+  padding-bottom: 3rem;
 }
 
 .container-menu {
@@ -96,29 +97,44 @@ h1 {
 }
 
 .search {
+  display: flex;
+  justify-content: center;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
   .search {
     text-align: right;
+    width: 15rem;
+    padding: 1rem 0;
   }
 }
-.search__form-input {
-  width: 100%;
-  font-family: "Font Awesome 5 free";
-  font-weight: 900;
-  font-size: 1rem;
-  text-align: center;
-  padding: 1rem 0;
-  border: none;
-  outline: none;
+.search .search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
   background-color: #dfdfdf;
 }
 @media screen and (min-width: 768px) {
-  .search__form-input {
-    width: 200px;
-    border-radius: 5px;
-    padding: 0.75rem 0;
+  .search .search-form {
+    border-radius: 10px;
+  }
+}
+.search .search-form__input {
+  font-size: 1rem;
+  padding: 1rem 0 1rem 0.5rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.search .search-form__icon {
+  font-size: 1.25rem;
+  padding-left: 5rem;
+}
+@media screen and (min-width: 768px) {
+  .search .search-form__icon {
+    padding-left: 5rem;
+    padding-right: 1rem;
   }
 }
 
@@ -398,7 +414,7 @@ h1 {
 }
 .list-menu .list-menuItem:hover .list-menuItem-anim__icon {
   transform: rotate(360deg);
-  transition: 0.5s ease-in;
+  transition: 0.3s ease-in-out;
   visibility: visible;
 }
 @keyframes opacity {
@@ -453,14 +469,14 @@ h1 {
   background-color: #99E2D0;
   width: 0;
   height: 5rem;
-  transition: width 0.5s ease-in-out;
+  transition: width 0.3s ease-in-out;
 }
 .list-menu .list-menuItem .list-menuItem-anim__icon {
   font-size: 1.5rem;
   color: white;
   transform: rotate(-180deg);
   visibility: hidden;
-  transition: 0.4s ease-in;
+  transition: 0.3s ease-in-out;
 }
 .list-menu .list-menuItem:nth-child(1) {
   animation-delay: 0.2s;
@@ -649,7 +665,7 @@ h1 {
   transition: opacity 0.3s ease-in-out 0.2s;
 }
 .grid-item .caption-icon--bold:hover::after {
-  animation: sca 1s ease-in-out;
+  animation: sca 1.3s ease-in-out;
   transform: scaleY(0);
   transform-origin: top;
 }

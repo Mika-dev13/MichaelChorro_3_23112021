@@ -142,7 +142,7 @@
                 transition: opacity .3s ease-in-out .2s;
                 
                 &::after {
-                    animation: sca 1s ease-in-out;
+                    animation: sca 1.3s ease-in-out;
                     transform: scaleY(0);
                     transform-origin: top;
                     
