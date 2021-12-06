@@ -109,24 +109,19 @@
     .caption-icon {
         font-size: 1.5rem;
         position: relative;
+        padding-right: 2px;
         
-        // &:hover {
-        //     background-image: $bg-button;
-        //     background-size: cover;
-        //     background-clip: text;
-        //     -webkit-background-clip: text;
-        //     color: transparent;
-        //     font-weight: bold;
-        //     //color: $secondary;
-        //     transition: .6s ease;
-        // }
-
         &--bold {
+            font-size: 1.6rem;
             position: absolute;
-            right: 1rem;
-            color: $secondary;
+            right: .95rem;
             opacity: 0;
-            transition: opacity .3s ease-in-out;
+            transition: opacity .2s ease-in-out;
+            background-image: $bg-button;
+            background-size: cover;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
             &::after {
                 content: '';
                 position: absolute;
@@ -139,10 +134,11 @@
             
             &:hover {
                 opacity: 1;
-                transition: opacity .3s ease-in-out .2s;
+                transition: opacity .1s ease-in-out .3s;
+                transform: scale(1.1);
                 
                 &::after {
-                    animation: sca 1.3s ease-in-out;
+                    animation: sca 1s ease-in-out;
                     transform: scaleY(0);
                     transform-origin: top;
                     

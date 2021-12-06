@@ -7,6 +7,9 @@
     border-radius: 999px;
     box-shadow: $b-shadow;
     color: #fff;
+    @include tablet {
+        padding: 1.25rem 1.25rem;
+    }
         
     &:hover {
             &::after {
