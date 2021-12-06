@@ -647,7 +647,7 @@ h1 {
   font-style: normal;
 }
 .grid-item .caption-icon {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   position: relative;
   padding-right: 2px;
 }
@@ -674,11 +674,11 @@ h1 {
 }
 .grid-item .caption-icon--bold:hover {
   opacity: 1;
-  transition: opacity 0.1s ease-in-out 0.3s;
   transform: scale(1.1);
+  transition: 0.3s ease-in-out 0.3s;
 }
 .grid-item .caption-icon--bold:hover::after {
-  animation: sca 1s ease-in-out;
+  animation: sca 1.2s ease-in-out;
   transform: scaleY(0);
   transform-origin: top;
 }

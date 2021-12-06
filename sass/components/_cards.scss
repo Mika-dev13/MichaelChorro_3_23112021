@@ -107,7 +107,7 @@
     }
 
     .caption-icon {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         position: relative;
         padding-right: 2px;
         
@@ -134,11 +134,11 @@
             
             &:hover {
                 opacity: 1;
-                transition: opacity .1s ease-in-out .3s;
                 transform: scale(1.1);
+                transition: .3s ease-in-out .3s;
                 
                 &::after {
-                    animation: sca 1s ease-in-out;
+                    animation: sca 1.2s ease-in-out;
                     transform: scaleY(0);
                     transform-origin: top;
                     
