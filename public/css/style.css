@@ -104,8 +104,7 @@ h1 {
 @media screen and (min-width: 768px) {
   .search {
     text-align: right;
-    width: 15rem;
-    padding: 1rem 0;
+    width: 10rem;
   }
 }
 .search .search-form {
@@ -121,20 +120,26 @@ h1 {
   }
 }
 .search .search-form__input {
-  font-size: 1rem;
-  padding: 1rem 0 1rem 0.5rem;
+  font-size: 0.75rem;
+  padding: 0.75rem 0 0.75rem 0.5rem;
   border: none;
   outline: none;
   background-color: transparent;
 }
+@media screen and (min-width: 768px) {
+  .search .search-form__input {
+    width: 9rem;
+    padding: 0.5rem 0;
+  }
+}
 .search .search-form__icon {
-  font-size: 1.25rem;
+  font-size: 0.75rem;
   padding-left: 5rem;
 }
 @media screen and (min-width: 768px) {
   .search .search-form__icon {
-    padding-left: 5rem;
-    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-right: 0.5rem;
   }
 }
 
