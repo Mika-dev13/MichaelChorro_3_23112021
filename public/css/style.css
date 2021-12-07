@@ -63,11 +63,6 @@ body {
   color: #202020;
 }
 
-h1 {
-  font-family: "Shrikhand";
-  font-size: 2rem;
-}
-
 .header {
   display: flex;
   flex-direction: column;
@@ -76,6 +71,8 @@ h1 {
   position: relative;
 }
 .header__logo {
+  font-family: "Shrikhand";
+  font-size: 2rem;
   box-shadow: 2px 5px 10px 1px rgba(63, 28, 28, 0.2);
   width: 100%;
   text-align: center;
@@ -179,6 +176,9 @@ h1 {
 .footer__link--block {
   display: block;
   color: white;
+}
+.footer__link--icon {
+  font-size: 0.7rem;
 }
 
 .header-menu {
@@ -362,14 +362,17 @@ h1 {
 .restaurant-name__icon--bold {
   position: absolute;
   right: 1.5rem;
-  color: #FF79DA;
+  background-image: linear-gradient(350deg, #90849e 0%, #ff79da 100%);
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
 }
 .restaurant-name__icon--bold:hover {
   opacity: 1;
-  transform: scale(1.2);
-  transition: opacity 0.3s ease-in-out;
+  transform: scale(1.1);
 }
 
 .content-menu__title {
@@ -509,7 +512,7 @@ h1 {
   position: relative;
   z-index: 1;
   padding: 0.75rem 1rem;
-  background: linear-gradient(350deg, #9356dc 0%, #ff79da 100%);
+  background: linear-gradient(350deg, #90849e 0%, #ff79da 100%);
   border-radius: 999px;
   box-shadow: 2px 5px 10px 1px rgba(63, 28, 28, 0.2);
   color: #fff;
@@ -652,7 +655,7 @@ h1 {
   font-style: normal;
 }
 .grid-item .caption-icon {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   position: relative;
   padding-right: 2px;
 }
@@ -662,11 +665,12 @@ h1 {
   right: 0.95rem;
   opacity: 0;
   transition: opacity 0.2s ease-in-out;
-  background-image: linear-gradient(350deg, #9356dc 0%, #ff79da 100%);
+  background-image: linear-gradient(350deg, #90849e 0%, #ff79da 100%);
   background-size: cover;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  transition: 0.3s ease-in-out;
 }
 .grid-item .caption-icon--bold::after {
   content: "";
@@ -680,14 +684,13 @@ h1 {
 .grid-item .caption-icon--bold:hover {
   opacity: 1;
   transform: scale(1.1);
-  transition: 0.3s ease-in-out 0.3s;
 }
 .grid-item .caption-icon--bold:hover::after {
-  animation: sca 1.2s ease-in-out;
+  animation: scal 0.5s linear;
   transform: scaleY(0);
   transform-origin: top;
 }
-@keyframes sca {
+@keyframes scal {
   0% {
     transform: scaley(1);
   }

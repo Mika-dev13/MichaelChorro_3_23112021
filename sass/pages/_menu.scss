@@ -27,13 +27,16 @@
         &--bold {
             position: absolute;
             right: 1.5rem;
-            color: $secondary;
+            background-image: $bg-button;
+            background-size: cover;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
             opacity: 0;
             transition: opacity .3s ease-in-out;
             &:hover {
                 opacity: 1;
-                transform: scale(1.2);
-                transition: opacity .3s ease-in-out;
+                transform: scale(1.1);
             }
         }
     }
