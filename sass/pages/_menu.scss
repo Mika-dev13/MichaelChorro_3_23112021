@@ -1,8 +1,11 @@
 .hero-menu {
     &__img {
         width: 100%;
-        height: 50vh;
+        height: 30vh;
         object-fit: cover;
+        @include tablet {
+            height: 50vh;
+        }
     }
 }
 
