@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   margin: 0 auto;
 }
@@ -667,7 +671,7 @@ h1 {
   font-style: normal;
 }
 .grid-item .caption-icon {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   position: relative;
   padding-right: 2px;
 }
