@@ -1,135 +1,180 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="public/css/style.css">
-        <link rel="stylesheet" href="normalize.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-        <title>Choisissez votre restaurant, ohmyfood</title>
-    </head>
-    <body>
-        <div class="loader-container">
-            <ul class="loader-list">
-                <li class="loader-list__item">o</li>
-                <li class="loader-list__item">h</li>
-                <li class="loader-list__item">m</li>
-                <li class="loader-list__item">y</li>
-                <li class="loader-list__item">f</li>
-                <li class="loader-list__item">o</li>
-                <li class="loader-list__item">o</li>
-                <li class="loader-list__item">d</li>
-            </ul>
-        </div> 
-        <header class="header">
-            <div class="header__logo">
-                <a href="index.html">ohmyfood</a>
-            </div>
-            <div class="search">
-                <form class="search-form">
-                    <i class="fas fa-map-marker-alt search-form__icon"></i>
-                    <input type="search" class="search-form__input" id="search" placeholder="Paris, Belleville">
-                </form>
-            </div>
-        </header>
-        <main class="container">
-            <section class="hero">
-                <h1 class="hero__title">Réservez le menu qui vous convient</h1>
-                <p class="hero__text">Découvrez des restaurants d'exception sélectionnés par nos soins</p>
-                <a href="#restos" class="btn">Explorer nos restaurants</a>
-            </section>
-            <section class="functioning">
-                <h2 class="functioning__title">Fonctionnement</h2>
-                <ol class="functioning__content">
-                    <li class="functioning-card">
-                        <i class="fas fa-mobile-alt functioning-card__icon"></i>
-                        <p class="functioning-card__text">Choisissez votre restaurant</p>
-                    </li>
-                    <li class="functioning-card">
-                        <i class="fas fa-list-ul functioning-card__icon"></i>
-                        <p class="functioning-card__text">Composez votre menu</p>
-                    </li>
-                    <li class="functioning-card">
-                        <i class="fas fa-store functioning-card__icon functioning-card__icon--pink"></i>
-                        <p class="functioning-card__text">Dégustez au restaurant</p>
-                    </li>
-                </ol>
-            </section>
-            <section class="grid">
-                <h2 class="grid__title" id="restos">Restaurants</h2>
-                <div class="grid__items">
-                    <a href="menu-palette.html">
-                    <figure class="grid-item grid-item--new">
-                        <img src="img/resto1-sm.jpg" alt="Table de restaurant avec assiette garnie au centre" class="grid-item__img">
-                        <figcaption class="grid-item__caption">
-                            <div class="caption-content">
-                                <h3     class="caption-content__title">La palette du goût</h3>
-                                <address class="caption-content__address">Ménilmontant</address>
-                            </div>
-                        <i class="far fa-heart caption-icon"></i>
-                        <i class="fas fa-heart caption-icon caption-icon--bold"></i>    
-                        </figcaption>
-                    </figure>
-                    </a>
-                    <a href="menu-note-enchantee.html">
-                    <figure class="grid-item grid-item--new">
-                        <img src="img/resto2-sm.jpg" alt="Table de restaurant avec assiette garnie au centre" class="grid-item__img">
-                        <figcaption class="grid-item__caption">
-                            <div class="caption-content">
-                                <h3 class="caption-content__title">La note enchantée</h3>
-                                <address class="caption-content__address">Charonne</address>
-                            </div>
-                        <i class="far fa-heart caption-icon"></i>
-                        <i class="fas fa-heart caption-icon caption-icon--bold"></i>       
-                        </figcaption>
-                    </figure>
-                    </a>
-                    <a href="menu-francaise.html">
-                    <figure class="grid-item">
-                        <img src="img/resto3-sm.jpg" alt="Table de restaurant avec assiette garnie au centre" class="grid-item__img">
-                        <figcaption class="grid-item__caption">
-                            <div class="caption-content">
-                                <h3 class="caption-content__title">À la française</h3>
-                                <address class="caption-content__address">Cité rouge</address>
-                            </div>
-                        <i class="far fa-heart caption-icon"></i>
-                        <i class="fas fa-heart caption-icon caption-icon--bold"></i>       
-                        </figcaption>
-                    </figure>
-                    </a>
-                    <a href="menu-delice.html">
-                    <figure class="grid-item">
-                        <img src="img/resto4-sm.jpg" alt="Table de restaurant avec assiette garnie au centre" class="grid-item__img">
-                        <figcaption class="grid-item__caption">
-                            <div class="caption-content">
-                                <h3 class="caption-content__title">Le délice des sens</h3>
-                                <address class="caption-content__address">Folie-Méricourt</address>
-                            </div>
-                        <i class="far fa-heart caption-icon"></i>      
-                        <i class="fas fa-heart caption-icon caption-icon--bold"></i>      
-                        </figcaption>
-                    </figure>
-                    </a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="public/css/style.css" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <title>Choisissez votre restaurant, ohmyfood</title>
+  </head>
+  <body>
+    <div class="loader-container">
+      <ul class="loader-list">
+        <li class="loader-list__item">o</li>
+        <li class="loader-list__item">h</li>
+        <li class="loader-list__item">m</li>
+        <li class="loader-list__item">y</li>
+        <li class="loader-list__item">f</li>
+        <li class="loader-list__item">o</li>
+        <li class="loader-list__item">o</li>
+        <li class="loader-list__item">d</li>
+      </ul>
+    </div>
+    <header class="header">
+      <div class="header__logo">
+        <a href="index.html">ohmyfood</a>
+      </div>
+      <div class="search">
+        <form class="search-form">
+          <i class="fas fa-map-marker-alt search-form__icon"></i>
+          <input
+            type="search"
+            class="search-form__input"
+            id="search"
+            placeholder="Paris, Belleville"
+            aria-label="Rechercher un restaurant"
+          />
+        </form>
+      </div>
+    </header>
+    <main class="container">
+      <section class="hero">
+        <h1 class="hero__title">Réservez le menu qui vous convient</h1>
+        <p class="hero__text">
+          Découvrez des restaurants d'exception sélectionnés par nos soins
+        </p>
+        <a href="#restos" class="btn">Explorer nos restaurants</a>
+      </section>
+      <section class="functioning">
+        <h2 class="functioning__title">Fonctionnement</h2>
+        <ol class="functioning__content">
+          <li class="functioning-card">
+            <i class="fas fa-mobile-alt functioning-card__icon"></i>
+            <p class="functioning-card__text">Choisissez votre restaurant</p>
+          </li>
+          <li class="functioning-card">
+            <i class="fas fa-list-ul functioning-card__icon"></i>
+            <p class="functioning-card__text">Composez votre menu</p>
+          </li>
+          <li class="functioning-card">
+            <i
+              class="fas fa-store functioning-card__icon functioning-card__icon--pink"
+            ></i>
+            <p class="functioning-card__text">Dégustez au restaurant</p>
+          </li>
+        </ol>
+      </section>
+      <section class="grid">
+        <h2 class="grid__title" id="restos">Restaurants</h2>
+        <div class="grid__items">
+          <a href="./menu-palette.html">
+            <figure class="grid-item grid-item--new">
+              <img
+                src="img/resto1-sm.jpg"
+                alt="Table de restaurant avec assiette garnie au centre"
+                class="grid-item__img"
+              />
+              <figcaption class="grid-item__caption">
+                <div class="caption-content">
+                  <h3 class="caption-content__title">La palette du goût</h3>
+                  <address class="caption-content__address">
+                    Ménilmontant
+                  </address>
                 </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <div class="footer-content">
-            <a href="#"><h3 class="footer__title">ohmyfood</h3></a>
-            <a href="#" class="footer__link">
-                <i class="fas fa-utensils"></i>
-                <p class="footer__text footer__text--link">Proposer un restaurant</p>
-            </a>
-            <a href="#" class="footer__link">
-                <i class="fas fa-hands-helping fa footer__link--icon" ></i>
-                <p class="footer__text footer__text--link">Devenir partenaire</p>
-            </a>
-            <a href="#" class="footer__text footer__link--block">Mention légale</a>
-            <a href="mailto:ohmyfood@gmail.com" class="footer__text footer__link--block">Contact</a>
-            </div>
-        </footer>   
-    </body>
+                <i class="far fa-heart caption-icon"></i>
+                <i class="fas fa-heart caption-icon caption-icon--bold"></i>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="./menu-note-enchantee.html">
+            <figure class="grid-item grid-item--new">
+              <img
+                src="img/resto2-sm.jpg"
+                alt="Table de restaurant avec assiette garnie au centre"
+                class="grid-item__img"
+              />
+              <figcaption class="grid-item__caption">
+                <div class="caption-content">
+                  <h3 class="caption-content__title">La note enchantée</h3>
+                  <address class="caption-content__address">Charonne</address>
+                </div>
+                <i class="far fa-heart caption-icon"></i>
+                <i class="fas fa-heart caption-icon caption-icon--bold"></i>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="./menu-francaise.html">
+            <figure class="grid-item">
+              <img
+                src="img/resto3-sm.jpg"
+                alt="Table de restaurant avec assiette garnie au centre"
+                class="grid-item__img"
+              />
+              <figcaption class="grid-item__caption">
+                <div class="caption-content">
+                  <h3 class="caption-content__title">À la française</h3>
+                  <address class="caption-content__address">Cité rouge</address>
+                </div>
+                <i class="far fa-heart caption-icon"></i>
+                <i class="fas fa-heart caption-icon caption-icon--bold"></i>
+              </figcaption>
+            </figure>
+          </a>
+          <a href="./menu-delice.html">
+            <figure class="grid-item">
+              <img
+                src="img/resto4-sm.jpg"
+                alt="Table de restaurant avec assiette garnie au centre"
+                class="grid-item__img"
+              />
+              <figcaption class="grid-item__caption">
+                <div class="caption-content">
+                  <h3 class="caption-content__title">Le délice des sens</h3>
+                  <address class="caption-content__address">
+                    Folie-Méricourt
+                  </address>
+                </div>
+                <i class="far fa-heart caption-icon"></i>
+                <i class="fas fa-heart caption-icon caption-icon--bold"></i>
+              </figcaption>
+            </figure>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-content">
+        <a href="#"><h3 class="footer__title">ohmyfood</h3></a>
+        <a href="#" class="footer__link">
+          <i class="fas fa-utensils"></i>
+          <p class="footer__text footer__text--link">Proposer un restaurant</p>
+        </a>
+        <a href="#" class="footer__link">
+          <i class="fas fa-hands-helping fa footer__link--icon"></i>
+          <p class="footer__text footer__text--link">Devenir partenaire</p>
+        </a>
+        <a href="#" class="footer__text footer__link--block">Mention légale</a>
+        <a
+          href="mailto:ohmyfood@gmail.com"
+          class="footer__text footer__link--block"
+          >Contact</a
+        >
+      </div>
+    </footer>
+  </body>
 </html>
